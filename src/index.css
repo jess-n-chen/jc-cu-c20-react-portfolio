@@ -181,7 +181,7 @@ section {
   background-position: 80%;
 }
 
-.project-container {
+.secondary-section {
   background: var(--primary-color-gray-half-opacity);
   border-radius: 0.625rem;
   padding: 5%;
@@ -220,7 +220,39 @@ section {
   text-shadow: 0 0 5px var(--secondary-color-white);
 }
 
-/* Contact Section Styling */
+/* Contact Form Styling */
+.contact-section {
+  background-image: url("../src/assets/images/pexels-natalie-1201538.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.contact-section label {
+  color: var(--secondary-color-beige);
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+}
+
+.btn-submit {
+  border: 0.125rem var(--secondary-color-white) solid;
+  border-radius: 0px;
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color-beige);
+  display: inline-block;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  padding: 0.625rem 1.875rem;
+  text-transform: uppercase;
+}
+
+.btn-submit:hover {
+  background-color: var(--secondary-color-white);
+  text-shadow: var(--text-shadow);
+}
+
+/* Footer Contact Section Styling */
 .contact-container {
   align-items: center;
   display: flex;
@@ -233,24 +265,12 @@ section {
 }
 
 .fab,
-.fas,
-.fa-solid {
+.fas {
   color: var(--primary-color-gray);
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.5;
   padding: 0.625rem;
-}
-
-/* Footer Styling */
-footer {
-  background-color: var(--secondary-color-white);
-  text-align: center;
-  padding: 0.625rem;
-}
-
-footer p {
-  color: var(--secondary-color-gray);
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */

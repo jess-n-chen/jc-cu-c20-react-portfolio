@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <section id="contact-me" className="section-primary">
+    <section className="section-primary">
       <div className="section-title-primary">
-        <h2>Contact Me</h2>
+        <p className="text-center">created by: jessica chen</p>
       </div>
       <div className="contact-container">
         <div className="contact-icons">
