@@ -1,13 +1,334 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Declare CSS Variables */
+:root {
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  --heading-font-family: "Mukta", sans-serif;
+  --nav-color: rgba(0, 0, 0, 0.55);
+  --nav-color-active: rgba(0, 0, 0, 0.9);
+  --paragraph-font-family: "Quicksand", sans-serif;
+  --primary-color-gray: #596e79;
+  --primary-color-gray-half-opacity: rgba(89, 110, 121, 0.5);
+  --secondary-color-white: #fff;
+  --secondary-color-beige: #f0ece2;
+  --secondary-color-beige-half-opacity: rgba(240, 236, 226, 0.25);
+  --secondary-color-lavender: rgba(203, 195, 227, 0.5);
+  --text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--paragraph-font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--secondary-color-white);
+  font-family: "Dancing Script", cursive;
+  font-size: 9.375rem;
+  text-shadow: var(--text-shadow);
+}
+
+h2 {
+  color: var(--secondary-color-beige);
+  font-family: var(--heading-font-family);
+  font-size: 4.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+h3 {
+  color: var(--secondary-color-white);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  text-shadow: var(--text-shadow);
+}
+
+p {
+  color: var(--secondary-color-beige);
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+section {
+  padding: 3.75rem;
+}
+
+/* Hero Section Styling */
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 95vh;
+  position: relative;
+}
+
+.hero video {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-cta,
+.hero-button {
+  margin: 1.25rem;
+  mix-blend-mode: overlay;
+  text-shadow: var(--text-shadow);
+}
+
+.hero-cta p {
+  color: var(--secondary-color-white);
+  font-size: 1.5rem;
+}
+
+/* Hero Button & Section Button Styling */
+.btn-hero {
+  background: var(--primary-color-gray);
+  font-weight: 800 !important;
+}
+
+.section-links {
+  background: var(--primary-color-gray-half-opacity);
+  font-weight: 600;
+}
+
+.btn-hero,
+.section-links {
+  border: 0.125rem var(--secondary-color-white) solid;
+  border-radius: 0px;
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color-white);
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 0.625rem 1.875rem;
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+}
+
+.btn-hero:hover,
+.section-links:hover {
+  background: var(--secondary-color-white);
+  color: #000;
+}
+
+/* General Section Styling */
+.section-title-primary {
+  border-bottom: 1px solid var(--primary-color-gray);
+  margin: 0 auto;
+  width: 50%;
+}
+.section-title-secondary {
+  border-bottom: 0.063rem solid var(--secondary-color-beige);
+  margin: 0 auto;
+  text-shadow: var(--text-shadow);
+  width: 50%;
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3.125rem auto;
+  padding-bottom: 3.125rem;
+  width: 80%;
+}
+
+.section-primary {
+  background: var(--secondary-color-lavender);
+}
+
+.section-primary h2,
+.section-primary p {
+  color: var(--primary-color-gray);
+}
+
+/* About Me Section Styling */
+.about-image {
+  flex: 1 30%;
+  margin-right: 1.25rem;
+}
+
+.about-image img {
+  border-radius: 50%;
+  max-width: 80%;
+}
+
+.about-text {
+  flex: 12;
+}
+
+/* My Work Section Section */
+.projects {
+  background-image: url("../src/assets/images/pexels-natalie-1201538.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.project-container {
+  background: var(--primary-color-gray-half-opacity);
+  border-radius: 0.625rem;
+  padding: 5%;
+}
+
+.project-tile {
+  flex: 1;
+  margin: 1.25rem;
+}
+
+.project-tile img {
+  border-radius: 0.938rem;
+  max-width: 100%;
+}
+
+.project-tile .project-desc {
+  flex: 5;
+  overflow-wrap: break-word;
+}
+
+.image-link:hover {
+  border: 0.125rem var(--secondary-color-white) solid;
+  border-radius: 0px;
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+}
+
+.source-link {
+  color: var(--secondary-color-white);
+  text-decoration: underline;
+}
+
+.source-link:hover {
+  color: var(--secondary-color-white);
+  text-shadow: 0 0 5px var(--secondary-color-white);
+}
+
+/* Contact Section Styling */
+.contact-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-icons {
+  margin: 1.25rem;
+}
+
+.fab,
+.fas,
+.fa-solid {
+  color: var(--primary-color-gray);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0.625rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--secondary-color-white);
+  text-align: center;
+  padding: 0.625rem;
+}
+
+footer p {
+  color: var(--secondary-color-gray);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  /* this will be applied on any screen smaller than 980px */
+  h3 {
+    font-size: 1.625rem;
+    font-weight: 600;
+  }
+
+  .section-links {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  /* this will be applied on any screen between 768px and 575px */
+  h1 {
+    font-size: 7.5rem;
+  }
+
+  h2 {
+    font-size: 3.25;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    border-radius: 50%;
+    max-width: 50%;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-text {
+    flex: 10;
+  }
+
+  .section-links {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  /* this will be applied on any screen smaller than 575px */
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .section-links {
+    font-size: 0.9rem;
+  }
 }

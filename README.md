@@ -16,7 +16,7 @@
 
 ## General Information
 
-This repository contains my refactored portfolio website with accessibility support using React framework.
+This repository contains my refactored portfolio as a single-page application with accessibility support using React framework.
 
 ## Project Requirements
 
@@ -73,8 +73,10 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ## Installation
 
 1. Clone the repository to your local drive.
-2. Run npm i in order to install the npm package dependencies as specified in the package.json file.
-3. Run npm start in the command line to use the application.
+2. Run npx create-react-app to create a local React Application
+3. Move the public, src and package.json files into the newly created react-app directory.
+4. Run npm i in order to install any new npm package dependencies as specified in the package.json file.
+5. Run npm start in the command line to use the application.
 
 ## Screenshots
 
