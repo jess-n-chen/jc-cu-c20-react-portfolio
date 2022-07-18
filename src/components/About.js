@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image from "../assets/images/IMG_0519.png";
 
 function About() {
+  useEffect(() => {
+    document.title = "jessica chen | about me";
+  });
+
   return (
     <section id="about-me" className="section-primary">
       <div className="section-title-primary">

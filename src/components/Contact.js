@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { validateEmail } from "../utils/helpers";
 
 function Contact() {
+  useEffect(() => {
+    document.title = "jessica chen | contact";
+  });
+
   const [formState, setFormState] = useState({
     name: "",
     email: "",

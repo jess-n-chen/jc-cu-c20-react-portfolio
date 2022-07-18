@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import resume from "../assets/docs/Jessica_Chen-Resume_2022.pdf";
 
 function Resume() {
+  useEffect(() => {
+    document.title = "jessica chen | resume";
+  });
+
   return (
     <section id="resume-section" className="section-primary">
       <div className="section-title-primary">

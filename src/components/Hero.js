@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import video from "../assets/images/production ID_5056537.mp4";
 import poster from "../assets/images/hero-video-placeholder.png";
 
 function Hero() {
+  useEffect(() => {
+    document.title = "jessica chen | homepage";
+  });
+
   return (
     <section className="hero">
       <video playsinline autoPlay muted loop poster={poster}>
