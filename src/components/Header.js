@@ -1,14 +1,17 @@
 import React from "react";
 import Nav from "./Navigation";
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
   return (
     <header className="navigation-bar fixed-top">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <span
+            className="navbar-brand"
+            onClick={() => handlePageChange("Home")}
+          >
             👩‍💻 jc
-          </a>
+          </span>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,7 +23,7 @@ function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Nav />
+          <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
       </nav>
     </header>
