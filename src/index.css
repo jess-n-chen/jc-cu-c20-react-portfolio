@@ -63,6 +63,10 @@ section {
   padding: 3.75rem;
 }
 
+.active {
+  text-shadow: var(--text-shadow);
+}
+
 /* Hero Section Styling */
 .hero {
   align-items: center;
