@@ -12,7 +12,9 @@ function App() {
 
   const renderPage = () => {
     if (currentPage === "Home") {
-      return <Hero />;
+      return (
+        <Hero currentPage={currentPage} handlePageChange={handlePageChange} />
+      );
     }
     if (currentPage === "About") {
       return <About />;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import video from "../assets/images/production ID_5056537.mp4";
 import poster from "../assets/images/hero-video-placeholder.png";
 
-function Hero() {
+function Hero({ currentPage, handlePageChange }) {
   useEffect(() => {
     document.title = "jessica chen | homepage";
   });
@@ -18,9 +18,12 @@ function Hero() {
         <p>a developer-in-training based in New York</p>
       </div>
       <div className="hero-button">
-        <a href="#my-work" className="btn-hero" title="View Projects Link">
+        <span
+          onClick={() => handlePageChange("Portfolio")}
+          className="btn-hero"
+        >
           view my projects
-        </a>
+        </span>
       </div>
     </section>
   );
