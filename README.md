@@ -80,11 +80,11 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Screenshots
 
-![Website screenshot 1](/assets/images/portfolio-screenshot-1.png)
-![Website screenshot 2](/assets/images/portfolio-screenshot-2.png)
-![Website screenshot 3](/assets/images/portfolio-screenshot-3.png)
-![Website screenshot 4](/assets/images/portfolio-screenshot-4.png)
-![Website screenshot 5](/assets/images/portfolio-screenshot-5.png)
+![Website screenshot 1](./src/assets/images/portfolio-screenshot-1.png)
+![Website screenshot 2](./src/assets/images/portfolio-screenshot-2.png)
+![Website screenshot 3](./src/assets/images/portfolio-screenshot-3.png)
+![Website screenshot 4](./src/assets/images/portfolio-screenshot-4.png)
+![Website screenshot 5](./src/assets/images/portfolio-screenshot-5.png)
 
 ## Source Code
 
