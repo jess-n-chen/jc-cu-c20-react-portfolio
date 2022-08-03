@@ -62,6 +62,15 @@ function Portfolio() {
       source_code_link: "https://github.com/jess-n-chen/weather-app-react-js",
       image_src: "/images/weather.png",
     },
+    {
+      project_name: "Slytherin Social MERN Project",
+      short_name: "Slytherin Social",
+      description: "A new way to connect with your friends!",
+      live_link: "https://slytherin-social.herokuapp.com/",
+      source_code_link:
+        "https://github.com/slytherin-CU-VIRT-BO/slytherin-social-app",
+      image_src: "/images/slytherin-social.png",
+    },
   ]);
 
   return (
