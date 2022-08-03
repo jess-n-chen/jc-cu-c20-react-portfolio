@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jc-cu-c20-react-portfolio/static/css/main.24983174.css",
-    "main.js": "/jc-cu-c20-react-portfolio/static/js/main.5a0f06ac.js",
+    "main.js": "/jc-cu-c20-react-portfolio/static/js/main.c2f5ca85.js",
     "static/js/787.a2cb61a6.chunk.js": "/jc-cu-c20-react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/production ID_5056537.mp4": "/jc-cu-c20-react-portfolio/static/media/production ID_5056537.a567414c351a488ba0c2.mp4",
     "static/media/portfolio-screenshot-5.png": "/jc-cu-c20-react-portfolio/static/media/portfolio-screenshot-5.5658b45cc69bc49c1952.png",
@@ -14,6 +14,7 @@
     "static/media/portfolio-screenshot-1.png": "/jc-cu-c20-react-portfolio/static/media/portfolio-screenshot-1.d1fa4a029b0193761ab6.png",
     "static/media/weather.png": "/jc-cu-c20-react-portfolio/static/media/weather.d88ecf72ca6beca27c0a.png",
     "static/media/weather-1.png": "/jc-cu-c20-react-portfolio/static/media/weather-1.32328bc5b085b61a3043.png",
+    "static/media/slytherin-social.png": "/jc-cu-c20-react-portfolio/static/media/slytherin-social.82baa561085350255f2a.png",
     "static/media/pexels-natalie-1201538.jpg": "/jc-cu-c20-react-portfolio/static/media/pexels-natalie-1201538.69add27839135ab1ba51.jpg",
     "static/media/nookblog.png": "/jc-cu-c20-react-portfolio/static/media/nookblog.31581c05175994fd471f.png",
     "static/media/portfolio-screenshot-4.png": "/jc-cu-c20-react-portfolio/static/media/portfolio-screenshot-4.a0fdae5af45881f2539f.png",
@@ -21,11 +22,11 @@
     "static/media/Jessica_Chen-Resume_2022.pdf": "/jc-cu-c20-react-portfolio/static/media/Jessica_Chen-Resume_2022.4e468eaada34fd52dfec.pdf",
     "index.html": "/jc-cu-c20-react-portfolio/index.html",
     "main.24983174.css.map": "/jc-cu-c20-react-portfolio/static/css/main.24983174.css.map",
-    "main.5a0f06ac.js.map": "/jc-cu-c20-react-portfolio/static/js/main.5a0f06ac.js.map",
+    "main.c2f5ca85.js.map": "/jc-cu-c20-react-portfolio/static/js/main.c2f5ca85.js.map",
     "787.a2cb61a6.chunk.js.map": "/jc-cu-c20-react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24983174.css",
-    "static/js/main.5a0f06ac.js"
+    "static/js/main.c2f5ca85.js"
   ]
 }
